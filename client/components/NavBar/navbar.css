@@ -1,0 +1,97 @@
+/* Color Pallet
+
+#010101 Black
+#362c5f Jacarta
+#fc8a68 Salmon
+#fefdfd Soft Peach
+#a095af Amethyst Smoke
+#964b48 Copper Rust
+
+#010101 Black
+#e4e4e4 Mecury
+#5f22d9 Purple Heart
+#2c016d Christalle
+#9c9c9c DustyGray
+#d7ad0d Galliano
+#5b5b5b Scorpian
+#51d6ca Viking
+#ac73ff Hellotrope
+#c82b28 Persian Red
+
+Different page combos
+background: #5f22d9;
+font-color: #e4e4e4;
+color: #51d6ca; hover: #00d084;
+
+background: #2c016d;
+color: #e4e4e4; hover: #00d084;
+
+background: #51d6ca;
+color: #e4e4e4; hover: #00d084;
+
+*/
+
+@import url("../../src/satoshi.css");
+
+.navbar {
+  height: 7rem;
+  width: 100vw;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  font-family: "Satoshi-Black";
+}
+
+.logo {
+  object-fit: cover;
+  height: 5rem;
+  width: 5rem;
+}
+
+.desktopMenuListItem {
+  margin: 1rem;
+  cursor: pointer;
+  font-family: "Satoshi-Regular";
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.desktopMenuListItem:hover {
+  color: #00d084;
+  /* color: #92e4cf; */
+  border-bottom: 2px solid #00d084;
+}
+
+.desktopContactMeBtn {
+  background: white;
+  color: black;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  border-radius: 2rem;
+  font-family: "Satoshi-Regular";
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.desktopContactMeIcon {
+  object-fit: cover;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin: 1rem;
+  border-bottom: none;
+}
+
+.desktopContactMeLink {
+  text-decoration: none;
+}

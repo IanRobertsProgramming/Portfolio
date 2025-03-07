@@ -1,5 +1,5 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+/* :root {
+  font-family: Satoshi;
   line-height: 1.5;
   font-weight: 400;
 
@@ -14,18 +14,17 @@
 }
 
 @font-face {
-  font-family: 'Satoshi';
-  src: url('../assets/fonts/custom-font.woff2') format('woff2'),
-       url('../assets/fonts/custom-font.woff') format('woff');
+  font-family: "Satoshi";
+  src: url("../assets/fonts/custom-font.woff2") format("woff2"),
+    url("../assets/fonts/custom-font.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-}
+} */
 
 /* Apply the font */
-body {
-  font-family: 'CustomFont', sans-serif;
+/* body {
+  font-family: "CustomFont", sans-serif;
 }
-
 
 nav {
   position: fixed;
@@ -88,4 +87,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
