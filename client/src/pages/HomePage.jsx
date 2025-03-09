@@ -1,6 +1,7 @@
+/* eslint-disable react/no-unescaped-entities */
 // import React from "react";
-import "./Home.css";
-import pictureOfMe from "../../src/assets/pictureOfMe.png";
+import "../styles/Home.css";
+import pictureOfMe from "../../public/assets/images/pictureOfMe.png";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { Link } from "react-router-dom";
 
@@ -23,7 +24,7 @@ export default function Home() {
             <Icon
               icon="mdi:briefcase-outline"
               className="desktopContactMeIcon"
-              alt="Hire Me"
+              alt=""
             />
             Hire Me
           </button>

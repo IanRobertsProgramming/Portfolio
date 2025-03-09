@@ -1,6 +1,6 @@
 // import React from "react";
-import "./navbar.css";
-import logo from "../../src/assets/logo.svg";
+import "../styles/navbar.css";
+import logo from "../../public/assets/images/logo.svg";
 import { Link } from "react-router-dom";
 import { Icon } from "@iconify/react";
 
@@ -19,8 +19,8 @@ export default function NavBar() {
           <Link to="/education" className="desktopMenuListItem">
             Education
           </Link>
-          <Link to="/project" className="desktopMenuListItem">
-            Project
+          <Link to="/projects" className="desktopMenuListItem">
+            Projects
           </Link>
           <Link to="/services" className="desktopMenuListItem">
             Services

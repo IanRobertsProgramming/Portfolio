@@ -1,13 +1,13 @@
 // import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Home from "./components/Home/Home";
-import About from "./src/about";
-import Contact from "./src/contact";
-import Education from "./src/education";
-import Project from "./src/project";
-import Services from "./src/services";
+import Home from "./src/pages/HomePage";
+import About from "./src/pages/AboutPage";
+import Contact from "./src/pages/ContactPage";
+import Education from "./src/pages/EducationPage";
+import Projects from "./src/pages/ProjectsPage";
+import Services from "./src/pages/ServicesPage";
 // import Layout from "./components/Layout";
-import NavBar from "./components/NavBar/navbar";
+import NavBar from "./src/components/NavBar";
 
 const MainRouter = () => {
   return (
@@ -17,7 +17,7 @@ const MainRouter = () => {
         <Route exact path="/" element={<Home />} />
         <Route exact path="/about" element={<About />} />
         <Route exact path="/education" element={<Education />} />
-        <Route exact path="/project" element={<Project />} />
+        <Route exact path="/projects" element={<Projects />} />
         <Route exact path="/services" element={<Services />} />
         <Route exact path="/contact" element={<Contact />} />
       </Routes>

@@ -29,7 +29,7 @@
 .introName {
   font-size: 3rem;
   font-weight: 700;
-  color: #d7ad0d;
+  color: var(--secondary-color);
 }
 
 .introContent {
@@ -70,3 +70,22 @@
   margin: 0 0.25rem;
   height: 1rem;
 }
+
+@media screen and (max-width: 840px) {
+  /* .pictureOfMe {
+    right:-10vw;
+  } */
+
+  .hi {
+    font-size: 4.5vw;
+  }
+  .introContent {
+    font-size: 10vw;
+  }
+}
+
+/* @media screen and (max-width: 420px) {
+  .pictureOfMe {
+    right:-10vw;
+  }
+} */
