@@ -7,18 +7,6 @@
   position: relative;
 }
 
-.pictureOfMe {
-  position: absolute;
-  top: 1rem;
-  right: 0;
-  z-index: -1;
-  object-fit: cover;
-  height: 400px;
-  width: 400px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid #ddd;
-}
 
 .hi {
   font-size: 1.75rem;
@@ -60,7 +48,7 @@
   padding: 0.75rem 1.5rem;
   border: none;
   border-radius: 2rem;
-  font-family: "Satoshi-Regular";
+  font-family: var(--font-family);
   cursor: pointer;
   display: flex;
 }

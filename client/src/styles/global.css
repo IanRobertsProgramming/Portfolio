@@ -34,40 +34,45 @@ color: #e4e4e4; hover: #00d084;
 @import url("./satoshi.css");
 
 :root {
-  --primary-color: #6221cb;
-  --secondary-color: #00d084;
-  --text-color: white;
-  --hover-text-color: #00d084;
-  --background-color: transparent;
   --font-family: "Satoshi-Regular";
+
+  --background-color: transparent;
+
+  /* --theme-one-primary-background-color: #6221cb;
+  --theme-one-secondary-background-color: #00d084;
+  --theme-one-text-color: white; */
+
+  --theme-one-primary-background-color: #222831;
+  --theme-one-secondary-background-color: #393e46;
+  --theme-one-text-color: #eeeeee;
+
+  --theme-two-primary-color: white;
+  --theme-two-secondary-color: #6221cb;
+  --theme-two-text-color: black;
+
+  /* --hover-text-color: #00d084; */
+  --hover-text-color: #00adb5;
 }
 
 * {
+  font-family: var(--font-family);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
   background-color: var(--background-color);
 }
+
 body {
-  /* background: #5f22d9; */
-  font-family: var(--font-family);
-  background: var(--primary-color);
-  color: var(--text-color);
+  background: var(--theme-one-primary-background-color);
+  color: var(--theme-one-text-color);
   overflow: hidden;
   overflow-y: scroll;
 }
 
-/* button {
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  font-size: 1rem;
-  border-radius: 5px;
-} */
-
 a {
   text-decoration: none;
-  color: var(--text-color);
+  color: var(--theme-one-text-color);
 }
 a:hover {
   color: var(--hover-text-color);

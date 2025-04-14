@@ -1,46 +1,47 @@
 // import React from "react";
 import "../styles/navbar.css";
-import logo from "../../public/assets/images/logo.svg";
+import Logo from "/assets/images/logo.svg";
 import { Link } from "react-router-dom";
 import { Icon } from "@iconify/react";
 
 export default function NavBar() {
   return (
-    <>
-      <nav className="navbar">
-        <img src={logo} alt="logo" className="logo" />
-        <div className="desktopMenu">
-          <Link to="/" className="desktopMenuListItem">
-            Home
-          </Link>
-          <Link to="/about" className="desktopMenuListItem">
-            About
-          </Link>
-          <Link to="/education" className="desktopMenuListItem">
-            Education
-          </Link>
-          <Link to="/projects" className="desktopMenuListItem">
-            Projects
-          </Link>
-          <Link to="/services" className="desktopMenuListItem">
-            Services
-          </Link>
-        </div>
-        <Link to="/contact" className="desktopContactMeLink">
-          <button className="desktopContactMeBtn">
-            <Icon
-              icon="mdi:message-outline"
-              className="desktopContactMeIcon"
-              alt="Contact Me"
-            />
-            Contact Me
-          </button>
+    <nav className="navbar">
+      <div className="logoWrapper">
+        <img src={Logo} alt="logo" className="logo" />
+      </div>
+      <div className="desktopMenu">
+        <Link to="/" className="desktopMenuListItem" activeclass="active">
+          Home
         </Link>
-        {/* <button className="desktopContactMeBtn">
-          <Icon icon="mdi:message-outline" className="desktopContactMeIcon" />
-          <Link to="/contact" className="desktopContactMeLink">Contact Me</Link>
-        </button> */}
-      </nav>
-    </>
+        <Link to="/about" className="desktopMenuListItem" activeclass="active">
+          About
+        </Link>
+        <Link
+          to="/projects"
+          className="desktopMenuListItem"
+          activeclass="active"
+        >
+          Projects
+        </Link>
+        <Link
+          to="/services"
+          className="desktopMenuListItem"
+          activeclass="active"
+        >
+          Services
+        </Link>
+      </div>
+      <Link to="/contact">
+        <button className="desktopContactMeBtn">
+          <Icon
+            icon="mdi:message-outline"
+            className="desktopContactMeIcon"
+            alt="Contact Me"
+          />
+          Contact Me
+        </button>
+      </Link>
+    </nav>
   );
 }

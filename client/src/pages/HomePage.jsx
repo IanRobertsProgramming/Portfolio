@@ -1,7 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-// import React from "react";
-import "../styles/Home.css";
-import pictureOfMe from "../../public/assets/images/pictureOfMe.png";
+import "../styles/home.css";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { Link } from "react-router-dom";
 
@@ -30,7 +28,6 @@ export default function Home() {
           </button>
         </Link>
       </div>
-      <img src={pictureOfMe} alt="" className="pictureOfMe" />
     </section>
   );
 }

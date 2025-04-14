@@ -1,0 +1,52 @@
+#services {
+  overflow: hidden;
+  width: 100vw;
+  max-width: 65rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+
+.serviceTitle {
+  font-size: 3rem;
+  font-weight: 600;
+  padding-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.serviceDesc {
+  font-weight: 350;
+  font-size: 1rem;
+  max-width: 50rem;
+  padding: 0 2rem;
+}
+
+.serviceBars {
+  margin: 1.5rem;
+  width: 100vw;
+  max-width: 80%;
+  text-align: left;
+}
+
+.serviceBar {
+  display: flex;
+  margin: 1rem;
+  padding: 1.5rem 2rem;
+  border-radius: 0.5rem;
+  background: var(--theme-one-secondary-background-color);
+}
+
+.serviceBarImg {
+  height: 3rem;
+  width: 3rem;
+  margin-right: 2rem;
+}
+
+.serviceBarText > p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+}

@@ -1,0 +1,15 @@
+.viewer {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.resume {
+  width: 75vw;
+  height: 100%;
+  border: none;
+  object-fit: contain;
+}

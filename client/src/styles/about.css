@@ -1,0 +1,90 @@
+.pictureOfMe {
+  position: absolute;
+  top: 1rem;
+  right: 0;
+  z-index: -1;
+  object-fit: cover;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+}
+#intro {
+  height: calc(100vh - 7rem);
+  width: 100vw;
+  max-width: 75rem;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.hi {
+  font-size: 1.75rem;
+  font-weight: 300;
+  color: white;
+}
+
+.introName {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+
+.introContent {
+  height: 100vh;
+  width: 100vw;
+  padding: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.introPara {
+  font-size: medium;
+  font-weight: 300;
+  margin-bottom: 0.75rem;
+}
+
+.hireMeLink {
+  text-decoration: none;
+  width: fit-content;
+}
+
+.hireMeBtn {
+  background: white;
+  color: black;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 2rem;
+  font-family: var(--font-family);
+  cursor: pointer;
+  display: flex;
+}
+
+.desktopContactMeIcon {
+  object-fit: cover;
+  margin: 0 0.25rem;
+  height: 1rem;
+}
+
+@media screen and (max-width: 840px) {
+  /* .pictureOfMe {
+      right:-10vw;
+    } */
+
+  .hi {
+    font-size: 4.5vw;
+  }
+  .introContent {
+    font-size: 10vw;
+  }
+}
+
+/* @media screen and (max-width: 420px) {
+    .pictureOfMe {
+      right:-10vw;
+    }
+  } */

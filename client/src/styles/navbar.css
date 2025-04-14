@@ -1,4 +1,4 @@
-@import url("../../src/styles/satoshi.css");
+@import url("../styles/satoshi.css");
 
 .navbar {
   height: 7rem;
@@ -21,19 +21,30 @@
   width: 5rem;
 }
 
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15rem;
+  height: 5rem;
+  padding: 0 1rem;
+}
+
 .desktopMenuListItem {
   margin: 1rem;
   cursor: pointer;
   font-family: "Satoshi-Regular";
   font-size: 1.5rem;
+  text-align: center;
   text-decoration: none;
   color: #ffffff;
+  flex-grow: 1; /* Allow these items to grow and take up available space */
+  text-align: center; /* Ensure that text is centered in the items */
 }
 
 .desktopMenuListItem:hover {
-  color: #00d084;
-  /* color: #92e4cf; */
-  border-bottom: 2px solid #00d084;
+  color: var(--hover-text-color);
+  border-bottom: 2px solid var(--hover-text-color);
 }
 
 .desktopContactMeBtn {
@@ -59,6 +70,6 @@
   border-bottom: none;
 }
 
-.desktopContactMeLink {
-  text-decoration: none;
+.desktopMenuListItem:active {
+  color: var(--hover-text-color);
 }
